@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台科大電機工程學系 雙主修修業計劃</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="university-info">
+                <h1><i class="fas fa-graduation-cap"></i> 台灣科技大學</h1>
+                <h2>電機工程學系 雙主修修業計劃</h2>
+            </div>
+            <div class="total-credits">
+                <span class="credits-label">總學分</span>
+                <span class="credits-value" id="totalCredits">48</span>
+            </div>
+        </header>
+
+        <nav class="semester-nav">
+            <button class="semester-btn active" data-semester="1">
+                <i class="fas fa-calendar-alt"></i>
+                第一學期
+                <span class="credits">13學分</span>
+            </button>
+            <button class="semester-btn" data-semester="2">
+                <i class="fas fa-calendar-alt"></i>
+                第二學期
+                <span class="credits">12學分</span>
+            </button>
+            <button class="semester-btn" data-semester="3">
+                <i class="fas fa-calendar-alt"></i>
+                第三學期
+                <span class="credits">13學分</span>
+            </button>
+            <button class="semester-btn" data-semester="4">
+                <i class="fas fa-calendar-alt"></i>
+                第四學期
+                <span class="credits">10學分</span>
+            </button>
+        </nav>
+
+        <main class="main-content">
+            <div class="semester-content active" id="semester-1">
+                <div class="semester-header">
+                    <h3><i class="fas fa-book"></i> 第一學期課程 (13學分)</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>計算機程式與應用</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience no-experience">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p class="experience-note">狀態：</p>
+                                <p>尚未經驗</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>電路學(一)</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience no-experience">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p class="experience-note">狀態：</p>
+                                <p>尚未經驗</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>電子學</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-microphone"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>泰雅語學習裝置結合語音辨識系統之設計</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>數位邏輯設計</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-search"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>宗教典籍文本探勘分析</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>電子學實習</h4>
+                            <span class="credits-badge">1學分</span>
+                        </div>
+                        <div class="course-experience no-experience">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p class="experience-note">狀態：</p>
+                                <p>尚未經驗</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="semester-content" id="semester-2">
+                <div class="semester-header">
+                    <h3><i class="fas fa-book"></i> 第二學期課程 (12學分)</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>微分方程</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>建立 GPA 時序的微分方程模型，分析成績變化趨勢</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>微算機概論</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience no-experience">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p class="experience-note">狀態：</p>
+                                <p>尚未經驗</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>微算機概論實習</h4>
+                            <span class="credits-badge">1學分</span>
+                        </div>
+                        <div class="course-experience no-experience">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p class="experience-note">狀態：</p>
+                                <p>尚未經驗</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>電磁學</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-magnet"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>分析地熱開發專案中的磁場量測資料，應用電磁理論</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>電機實務專題(上)</h4>
+                            <span class="credits-badge">2學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-project-diagram"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>協助地熱開發與醫療資料庫專案，進行資料清理、查詢介面設計與報表自動化</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="semester-content" id="semester-3">
+                <div class="semester-header">
+                    <h3><i class="fas fa-book"></i> 第三學期課程 (13學分)</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>信號與系統</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-wave-square"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>擷取泰雅語錄音的 MFCC 特徵進行語音信號分析</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>信號與系統實習</h4>
+                            <span class="credits-badge">1學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-chart-bar"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>使用 R 對語音語料進行 FFT 頻譜分析與視覺化</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>電力系統</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>分析地熱發電機組載率曲線以評估運行效能</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>電力系統實習</h4>
+                            <span class="credits-badge">1學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-database"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>以 SQL 建立自動化報表監控地熱發電效率</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>計算機組織</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>使用 LlamaFactory 在本地 GPU 上微調大型語言模型</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>電機實務專題(下)</h4>
+                            <span class="credits-badge">2學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-chart-pie"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>分析 LLM 對話紀錄資料並製作視覺化儀表板</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="semester-content" id="semester-4">
+                <div class="semester-header">
+                    <h3><i class="fas fa-book"></i> 第四學期課程 (10學分)</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>控制系統</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-cogs"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>嘗試利用大型語言模型生成的回饋來優化類比 PID 控制器參數</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>控制系統實習</h4>
+                            <span class="credits-badge">1學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-gamepad"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>在 Unity 中構建聊天機器人狀態機並優化對話流程參數</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>計算機概論</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>剖析多語言互動的 NLP 系統架構與運作機制</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>線性代數</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-matrix"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>對新聞議題矩陣執行奇異值分解以抽取潛在主題</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 114學年度 台灣科技大學電機工程學系 雙主修修業計劃</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
